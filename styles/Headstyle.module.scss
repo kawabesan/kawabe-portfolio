@@ -1,0 +1,64 @@
+$main-color: #eef7f7ec;
+
+
+
+.head {
+
+  .headBox {
+    position: relative;
+    height: 500px;
+    .headBackImg {
+
+      
+
+      .backImg {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+
+    .headTitleBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+
+      .headTitle {
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+        color: #fff;
+      }
+    }
+    
+  }
+  
+
+  
+  .headnav {
+    background-color: $main-color;
+    box-shadow: 1px 1px 10px #ced8d7;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      max-width: 450px;
+      margin: 0 auto;
+
+      li {
+        flex: 1;
+        font-size: 1.6rem;
+        text-align: center;
+        
+        .navBtn {
+          border: none;
+          font-size: 1.6rem;
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+
+}
