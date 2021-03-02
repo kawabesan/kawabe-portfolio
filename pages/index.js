@@ -9,7 +9,6 @@ import styles from '../styles/Profile.module.scss';
 
 export default function Home() {
   return (
-    <div>
       <Layout profile="/" portfolio="./portfolio" skill="./skill" title="Profile">
       
       <article className={styles.profileBox}>
@@ -25,7 +24,5 @@ export default function Home() {
         </div>
       </article>
       </Layout>
-
-    </div>
   )
 }

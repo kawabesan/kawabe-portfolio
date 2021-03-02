@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Headstyle.module.scss';
 import Link from 'next/link';
 import Image from '../public/Image';
@@ -7,19 +7,9 @@ import { Button } from 'react-bootstrap';
 
 
 
-class Header extends Component {
+function Header(props) {
 
-  constructor(props) {
-    super(props);
-  }
-
-
-
-  render() {
     return (
-
-      
-
       <header className={styles.head}>
         <div className={styles.headBox}>
           <div className={styles.headBackImg}>
@@ -32,9 +22,9 @@ class Header extends Component {
 
             <nav className={styles.headnav}>
                 <ul className={styles.headnavBox} >
-                  <li><Link href={this.props.profile}><Button className={styles.navBtn} variant="outline-secondary"><a>Profile</a></Button></Link></li>
-                  <li><Link href={this.props.portfolio}><Button className={styles.navBtn} variant="outline-secondary"><a>Portfolio</a></Button></Link></li>
-                  <li><Link href={this.props.skill}><Button className={styles.navBtn} variant="outline-secondary"><a>Skill</a></Button></Link></li>
+                  <li><Link href={props.profile}><Button className={styles.navBtn} variant="outline-secondary"><a>Profile</a></Button></Link></li>
+                  <li><Link href={props.portfolio}><Button className={styles.navBtn} variant="outline-secondary"><a>Portfolio</a></Button></Link></li>
+                  <li><Link href={props.skill}><Button className={styles.navBtn} variant="outline-secondary"><a>Skill</a></Button></Link></li>
                 </ul>
             </nav>
 
@@ -45,6 +35,6 @@ class Header extends Component {
       </header>
     )
   }
-}
+
 
 export default Header;
