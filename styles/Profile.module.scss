@@ -1,32 +1,62 @@
-  .profileBox {
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px;  // スマホ
 
-    .imageBox {
-      text-align: center;
-      margin: 0 auto 50px;
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
 
-      .pImg {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 3px 3px 10px #8c9b9a;
+.profileBox {
+  margin: 0 10px;
+  @include pc {
+    display: flex;
+  }
+  .imageBox {
+    text-align: center;
+    margin: 0 auto 30px;
+
+    .pImg {
+      max-width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 3px 3px 10px #8c9b9a;
+
+      @include tab {
+        max-width: 250px;
+        height: 250px;
       }
     }
+  }
 
-    .profiles {
-      margin-bottom: 80px;
-      width: 500px;
-      margin: 0 auto;
-      h3 {
-        text-align: center;
-        font-size: 3.6rem;
-        margin-bottom: 20px;
-        font-weight: bold;
+  .profiles {
+    margin-bottom: 80px;
+    margin: 0 auto;
+    h3 {
+      text-align: center;
+      font-size: 2.0rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+
+      @include tab {
+        font-size: 2.8rem
       }
-      p {
-        padding: 0 10px;
-        text-align: left;
+    }
+    p {
+      padding: 0 10px;
+      text-align: left;
+      font-size: 1.4rem;
+
+      @include tab {
         font-size: 1.6rem;
       }
     }
   }
+}

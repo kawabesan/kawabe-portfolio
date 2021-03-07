@@ -1,0 +1,34 @@
+
+.popBox {
+  padding: 15px;
+  .popHead {
+    margin-bottom: 20px;
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .popBody {
+    margin-bottom: 20px;
+    h4 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .popList {
+      font-size: 1.4rem;
+      list-style: disc;
+      margin-left: 20px;
+    }
+  }
+  .popBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,16 +1,25 @@
 $main-color: #eef7f7ec;
 
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px;  // スマホ
 
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
 
 .head {
-
   .headBox {
     position: relative;
     height: 500px;
     .headBackImg {
-
-      
-
       .backImg {
         display: block;
         width: 100%;
@@ -32,13 +41,14 @@ $main-color: #eef7f7ec;
         letter-spacing: 1px;
         color: #fff;
         text-shadow: 0 0 3px #4a4d4d;
+        @include pc {
+          font-size: 6.0rem;
+        line-height: 6.0rem;
+        }
       }
     }
-    
   }
-  
 
-  
   .headnav {
     background-color: $main-color;
     box-shadow: 1px 1px 10px #ced8d7;
@@ -46,21 +56,27 @@ $main-color: #eef7f7ec;
     ul {
       display: flex;
       justify-content: center;
-      max-width: 450px;
+      max-width: $sp;
       margin: 0 auto;
+      padding: 5px 10px;
+      @include pc {
+        max-width: $tab;
+      }
 
       li {
         flex: 1;
-        font-size: 1.6rem;
         text-align: center;
-        
+
         .navBtn {
           border: none;
-          font-size: 1.6rem;
-          padding: 15px 30px;
+          font-size: 1.4rem;
+          padding: 10px 20px;
+          @include pc {
+            font-size: 1.6rem;
+            padding: 10px 25px;
+          }
         }
       }
     }
   }
-
 }

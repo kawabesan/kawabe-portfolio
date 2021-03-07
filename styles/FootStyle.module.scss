@@ -1,10 +1,11 @@
-
 $main-color: #98d4d4;
 
 .foot {
   background-color: $main-color;
   text-align: center;
-  font-size: 1.4rem;
-  color: #fff;
   padding: 30px 0;
+  p {
+    font-size: 1.4rem;
+    color: #fff;
+  }
 }

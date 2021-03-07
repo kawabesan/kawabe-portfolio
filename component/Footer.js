@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import FootStyle from '../styles/FootStyle.module.scss';
+import styles from '../styles/FootStyle.module.scss';
 
 function Footer() {
     return(
-      <footer className={FootStyle.foot}>
-        <p>CopyRigth kawabePortfolio</p>
+      <footer className={styles.foot}>
+        <p>&copy; 2021 kawabePortfolio</p>
       </footer>
     )
 }

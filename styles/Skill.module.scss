@@ -1,0 +1,70 @@
+$main-color: #98d4d4;
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 350px;  // スマホ
+
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+
+.fBox {
+      @include pc {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+  .skillBox {
+    margin: 0 15px;
+    margin-bottom: 50px;
+    @include pc {
+      width: 30%;
+    }
+
+
+
+    .skillTitle {
+      font-size: 2.0rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+
+      @include tab {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+
+      @include tab {
+        font-size: 2.0rem;
+        margin-bottom: 20px;
+      }
+    }
+    .skills {
+      font-size: 1.6rem;
+      list-style: disc;
+      margin-left: 35px;
+
+      @include tab {
+        font-size: 1.8rem;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+}
+

@@ -1,19 +1,43 @@
 $main-color: #98d4d4;
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 350px;  // スマホ
 
 
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
 
 .mainBox {
-  
-  margin: 80px 0;
+  margin: 80px auto;
+  width: $sp;
+  @include tab {
+    width: $tab;
+  }
+  @include pc {
+    width: $pc;
+  }
 
   .titles {
-    width: 200px;
-    font-size: 3.6rem;
+    width: 150px;
+    font-size: 2.8rem;
     font-weight: bold;
     color: $main-color;
     border-bottom: 3px solid $main-color;
     text-align: center;
     margin: 0 auto 80px;
     padding-bottom: 3px;
+    
+    @include tab {
+      width: 200px;
+      font-size: 3.6rem;
+    }
   }
 }

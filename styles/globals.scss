@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
-$font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-
+$font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+  Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
 
 $main-font-color: #4a5251;
-
-
-
-
 
 * {
   box-sizing: border-box;
@@ -19,26 +14,26 @@ html {
   font-size: 62.5%;
 }
 
-
 body {
   font-family: $font-family;
   margin: 0;
   padding: 0;
   background-color: #eef7f7ec;
 
-  p, h1, h2, h3 {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  li {
     color: $main-font-color;
   }
 }
 
 .head {
   background: url(../public/DSC00138.JPG);
-
 }
 
-
-
-
-
-
-
+.modal-content {
+  background-color: #4a4d4d;
+}
