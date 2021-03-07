@@ -1,30 +1,59 @@
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px;  // スマホ
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
 
 .popBox {
   padding: 15px;
   .popHead {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     h3 {
       font-size: 2.4rem;
       margin-bottom: 20px;
       font-weight: bold;
+
+      @include pc {
+        font-size: 2.8rem;
+      }
     }
 
     p {
       font-size: 1.4rem;
+      @include pc {
+        font-size: 1.6rem;
+      }
     }
   }
 
   .popBody {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     h4 {
       font-size: 1.6rem;
       font-weight: bold;
       margin-bottom: 5px;
+      @include pc {
+        font-size: 1.8rem;
+      }
     }
     .popList {
       font-size: 1.4rem;
       list-style: disc;
       margin-left: 20px;
+
+      @include pc {
+        font-size: 1.6rem;
+        margin-left: 30px;
+      }
     }
   }
   .popBtn {

@@ -15,6 +15,24 @@ export default function Portfolio() {
           pfTitle="Meal Plan"
           fname="portfolio_img1.png"
           size="100%"
+          dis="晩ご飯候補を何個か入力し、ランダムで決めてくれるアプリです。"
+          period="2週間"
+          os="Mac"
+          lag="HTML・CSS, SASS, JavaScript"
+          fw="React"
+          db="firebase"
+          appLink="https://mealplan-4565a.web.app/"
+        />
+        <PortfolioItem
+          pfTitle="Kawabe Portfolio"
+          fname="portfolio_img2.png"
+          size="100%"
+          dis="ポートフォリオサイトになります。"
+          period="2週間"
+          os="Mac"
+          lag="HTML・CSS, SASS, JavaScript"
+          fw="React Next.js"
+          appLink="****"
         />
       </div>
     </Layout>

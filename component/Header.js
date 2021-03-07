@@ -12,7 +12,7 @@ function Header(props) {
           <Image name={styles.backImg} fname="DSC00250.JPG" size="100%" />
         </div>
         <div className={styles.headTitleBox}>
-          <h1 className={styles.headTitle}><span>Kawabe</span>Portfolio</h1>
+          <h1 className={styles.headTitle}>Kawabe Portfolio</h1>
         </div>
       </div>
 

@@ -18,13 +18,13 @@ function PortfolioItem(props) {
             <Popup title={props.pfTitle}
               show={modalShow}
               onHide={() => setModalShow(false)}
-              dis="晩ご飯候補を何個か入力し、ランダムで決めてくれるアプリです。"
-              period="2週間"
-              os="Mac"
-              lag="HTML・CSS, SASS, JavaScript"
-              fw="React"
-              db="firebase"
-              appLink="https://mealplan-4565a.web.app/"
+              dis={props.dis}
+              period={props.period}
+              os={props.os}
+              lag={props.lag}
+              fw={props.fw}
+              db={props.db}
+              appLink={props.appLink}
               >
               {props.children}
             </Popup>
