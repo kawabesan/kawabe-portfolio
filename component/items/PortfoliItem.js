@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Popup from './Popup';
-import styles from '../../styles/Portfolio.module.scss';
+import styles from '../../styles/portfolio.module.scss';
 import Image from '../../public/Image';
 
 function PortfolioItem(props) {

@@ -1,5 +1,5 @@
 import Layout from "../component/Layout";
-import styles from "../styles/Portfolio.module.scss";
+import styles from "../styles/portfolio.module.scss";
 import PortfolioItem from "../component/items/PortfoliItem";
 
 export default function Portfolio() {
