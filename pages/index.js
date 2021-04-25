@@ -8,7 +8,7 @@ export default function Home() {
     <Layout profile="/" portfolio="./portfolio" skill="./skill" title="Profile">
       <article className={styles.profileBox}>
         <div className={styles.imageBox}>
-          <Image fname="./DSC00138.JPG" size="300px" name={styles.pImg} />
+          <Image fname="./2268403.png" size="300px" name={styles.pImg} />
         </div>
         <div className={styles.profiles}>
           <h3>Kawabe Koshiro</h3>
