@@ -16,7 +16,7 @@ $sp: 480px;  // スマホ
 }
 
 .portfolios {
-  margin: 0 10px;
+  margin: 0 auto;
 
 
   @include pc {
@@ -27,7 +27,7 @@ $sp: 480px;  // スマホ
   
   .pfItems {
     @include pc {
-      margin-right: 60px;
+      margin: 0 auto;
     }
     .pfTitle {
       font-size: 2.4rem;

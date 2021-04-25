@@ -24,6 +24,18 @@ export default function Portfolio() {
           appLink="https://mealplan-4565a.web.app/"
         />
         <PortfolioItem
+          pfTitle="RecipeBox"
+          fname="portfolio_img2.png"
+          size="100%"
+          dis="日々作成した料理のレシピを書き込むことができるアプリになります。"
+          period="3週間"
+          os="Mac"
+          lag="HTML・CSS, SASS, JavaScript"
+          fw="React"
+          db="firebase"
+          appLink="https://recipe-box-f74b1.web.app/"
+        />
+          <PortfolioItem
           pfTitle="Kawabe Portfolio"
           fname="portfolio_img2.png"
           size="100%"
