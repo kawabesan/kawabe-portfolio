@@ -1,4 +1,4 @@
-import '../styles/Globals.scss';
+import '../styles/globals.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/reset.css';
 
