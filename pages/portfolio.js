@@ -13,7 +13,7 @@ export default function Portfolio() {
       <div className={styles.portfolios}>
         <PortfolioItem
           pfTitle="Meal Plan"
-          fname="portfolio_img1.png"
+          fname="./portfolio_img1.png"
           size="100%"
           dis="晩ご飯候補を何個か入力し、ランダムで決めてくれるアプリです。"
           period="2週間"
@@ -25,7 +25,7 @@ export default function Portfolio() {
         />
         <PortfolioItem
           pfTitle="RecipeBox"
-          fname="portfolio_img2.png"
+          fname="./portfolio_img2.png"
           size="100%"
           dis="日々作成した料理のレシピを書き込むことができるアプリになります。"
           period="3週間"
@@ -37,7 +37,7 @@ export default function Portfolio() {
         />
           <PortfolioItem
           pfTitle="Kawabe Portfolio"
-          fname="portfolio_img2.png"
+          fname="./portfolio_img2.png"
           size="100%"
           dis="ポートフォリオサイトになります。"
           period="2週間"
