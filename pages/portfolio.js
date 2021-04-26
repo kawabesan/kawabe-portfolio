@@ -44,7 +44,7 @@ export default function Portfolio() {
           os="Mac"
           lag="HTML・CSS, SASS, JavaScript"
           fw="React Next.js"
-          appLink="https://kawabe-portfolio-m8bblghad-kawabesan.vercel.app/"
+          appLink="https://kawabe-portfolio.net/"
         />
       </div>
     </Layout>
