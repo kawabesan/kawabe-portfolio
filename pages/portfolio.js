@@ -25,7 +25,7 @@ export default function Portfolio() {
         />
         <PortfolioItem
           pfTitle="RecipeBox"
-          fname="./portfolio_img2.png"
+          fname="./portfolio_img3.png"
           size="100%"
           dis="日々作成した料理のレシピを書き込むことができるアプリになります。"
           period="3週間"
