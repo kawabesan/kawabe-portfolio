@@ -4,6 +4,16 @@ $main-color: #98d4d4;
   background-color: $main-color;
   text-align: center;
   padding: 30px 0;
+
+  .iconBox {
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    
+  }
+
   p {
     font-size: 1.4rem;
     color: #fff;

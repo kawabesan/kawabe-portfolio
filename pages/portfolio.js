@@ -27,7 +27,7 @@ export default function Portfolio() {
           pfTitle="RecipeBox"
           fname="./portfolio_img3.png"
           size="100%"
-          dis="日々作成した料理のレシピを書き込むことができるアプリになります。"
+          dis="ログイン認証機能付きの日々作成した料理のレシピを書き込むことができるアプリです。"
           period="3週間"
           os="Mac"
           lag="HTML・CSS, SASS, JavaScript"
