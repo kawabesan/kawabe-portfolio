@@ -1,6 +1,5 @@
 import Layout from "../component/Layout";
 import Image from "../public/Image";
-import { Container, Row, Col } from "react-bootstrap";
 import styles from "../styles/Profile.module.scss";
 
 export default function Home() {

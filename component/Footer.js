@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import Reac from 'react';
 import styles from '../styles/FootStyle.module.scss';
 import Link from 'next/link';
 import GitHubIcon from '@material-ui/icons/GitHub';

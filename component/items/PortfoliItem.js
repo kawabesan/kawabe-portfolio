@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Popup from './Popup';
 import styles from '../../styles/portfolio.module.scss';
 import Image from '../../public/Image';

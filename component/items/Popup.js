@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../../styles/Popup.module.scss";
-import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Link from "next/link";
 import { Modal } from "react-bootstrap";
@@ -36,6 +35,7 @@ function Popup(props) {
       </div>
       <div className={styles.popBtn}>
         <Link href={props.appLink}>
+          <a target="_blank" rel="noreferrer noopener">
           <Button
             style={{ fontSize: "1.4rem" }}
             variant="contained"
@@ -43,6 +43,7 @@ function Popup(props) {
           >
             アプリを見る
           </Button>
+          </a>
         </Link>
         <Button style={{ fontSize: "1.4rem", marginLeft: "15px", }} onClick={props.onHide}>
           Close
