@@ -1,4 +1,4 @@
-$main-color: #eef7f7ec;
+$main-color: #98d4d4;
 
 $pc: 1024px; // PC
 $tab: 680px; // タブレット
@@ -59,6 +59,7 @@ $sp: 480px;  // スマホ
       max-width: $sp;
       margin: 0 auto;
       padding: 5px 10px;
+      
       @include pc {
         max-width: $tab;
       }
@@ -66,6 +67,7 @@ $sp: 480px;  // スマホ
       li {
         flex: 1;
         text-align: center;
+        
 
         .navBtn {
           border: none;
@@ -74,6 +76,7 @@ $sp: 480px;  // スマホ
           @include pc {
             font-size: 1.6rem;
             padding: 10px 25px;
+            color: #fff;
           }
         }
       }

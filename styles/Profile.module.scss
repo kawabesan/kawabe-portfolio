@@ -29,6 +29,10 @@ $sp: 480px;  // スマホ
       border-radius: 50%;
       box-shadow: 3px 3px 10px #8c9b9a;
 
+      @include pc {
+        margin-right: 30px;
+      }
+
       @include tab {
         max-width: 250px;
         height: 250px;
@@ -44,6 +48,7 @@ $sp: 480px;  // スマホ
       font-size: 2.0rem;
       margin-bottom: 20px;
       font-weight: bold;
+      margin-bottom: 30px;
 
       @include tab {
         font-size: 2.8rem

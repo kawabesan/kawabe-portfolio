@@ -13,11 +13,11 @@ function Footer() {
           <GitHubIcon style={{ fontSize: "30px", color: "#fff", cursor: "pointer"}}/>
         </div>
         </Link>
-        <Link href="https://twitter.com/xsbzMpQNmOJq0hF">
+        {/* <Link href="https://twitter.com/xsbzMpQNmOJq0hF">
         <div className={styles.tIcon}>
           <TwitterIcon style={{ fontSize: "30px", color: "#fff", cursor: "pointer"}}/>
         </div>
-        </Link>
+        </Link> */}
         </div>
 
         <p>&copy; 2021 kawabePortfolio</p>
