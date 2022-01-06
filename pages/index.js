@@ -19,8 +19,7 @@ export default function Home() {
             <br/><br/>
 
             ウェブ制作に興味を持ち、独学でHTML・CSS、Photoshopを学習。<br/>
-            その後、プログラミングにも興味を持ち、スクールにて3ヶ月間で<br/>
-            JavaScript・Reactなどの学習を行う
+            その後、プログラミングにも興味を持ち、JavaScript・Reactなどの学習を行う
             <br />
             
           </p>
